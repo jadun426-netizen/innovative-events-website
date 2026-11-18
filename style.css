@@ -1,4 +1,3 @@
-
 :root {
   --gold: #a47a43;
   --gold-dark: #896333;
@@ -472,27 +471,33 @@ footer a:hover {
   margin-top: 20px;
 }
 
-/* FOUNDER - CENTRED CIRCULAR PHOTO */
+/* FOUNDER - PERFECTLY CENTRED CIRCLE */
 
 .founder.section {
   background: #f5f1e9;
+  width: 100%;
+  padding: 75px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 35px;
-  padding: 75px 20px;
-  width: 100%;
   overflow: hidden;
 }
 
+/* Circle frame */
+
 .founder.section .founder-photo {
-  width: 360px;
-  height: 360px;
+  position: relative;
+  display: block;
+  width: 360px !important;
+  height: 360px !important;
+  min-width: 0;
   max-width: 85vw;
   aspect-ratio: 1 / 1;
-  margin: 0 auto;
+  flex: 0 0 auto;
+  margin: 0 auto !important;
   padding: 0;
   border-radius: 50%;
   overflow: hidden;
@@ -502,17 +507,31 @@ footer a:hover {
     0 0 0 11px #c9ad89;
 }
 
+/* Photo inside circle */
+
 .founder.section .founder-photo img {
+  position: absolute;
   display: block;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
   max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 25%;
+  object-position: center center;
 }
 
+/* Founder details */
+
 .founder.section .founder-copy {
+  display: block;
   width: 100%;
   max-width: 700px;
   min-width: 0;
@@ -860,7 +879,6 @@ footer .footer-main > div:not(:first-child) a {
 /* TABLET AND MOBILE */
 
 @media (max-width: 760px) {
-
   .top {
     padding: 12px 15px 0;
   }
@@ -1007,7 +1025,7 @@ footer .footer-main > div:not(:first-child) a {
     font-size: 16px;
   }
 
-  /* CENTRED FOUNDER ON MOBILE */
+  /* FOUNDER MOBILE */
 
   .founder.section {
     padding: 55px 18px;
@@ -1015,9 +1033,9 @@ footer .footer-main > div:not(:first-child) a {
   }
 
   .founder.section .founder-photo {
-    width: 290px;
-    height: 290px;
-    max-width: 85vw;
+    width: min(290px, 80vw) !important;
+    height: min(290px, 80vw) !important;
+    max-width: none;
   }
 
   .founder.section .founder-copy {
@@ -1077,7 +1095,6 @@ footer .footer-main > div:not(:first-child) a {
 /* SMALL PHONES */
 
 @media (max-width: 390px) {
-
   .brand-name {
     font-size: 20px;
   }
