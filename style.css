@@ -510,22 +510,20 @@ footer a:hover {
 /* Photo inside circle */
 
 .founder.section .founder-photo img {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  min-width: 100%;
-  min-height: 100%;
-  max-width: none;
-  max-height: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 60%;
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 50% !important;
 }
 
 /* Founder details */
