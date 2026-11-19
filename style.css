@@ -523,7 +523,7 @@ footer a:hover {
     border: 0;
     border-radius: 50%;
     object-fit: cover;
-    object-position: 50% 50% !important;
+    object-position: 60% 50% !important;
 }
 
 /* Founder details */
