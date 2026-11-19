@@ -471,7 +471,7 @@ footer a:hover {
   margin-top: 20px;
 }
 
-/* FOUNDER - PERFECTLY CENTRED CIRCLE */
+/* FOUNDER SECTION */
 
 .founder.section {
   background: #f5f1e9;
@@ -486,7 +486,7 @@ footer a:hover {
   overflow: hidden;
 }
 
-/* Circle frame */
+/* FOUNDER CIRCLE */
 
 .founder.section .founder-photo {
   position: relative;
@@ -507,26 +507,27 @@ footer a:hover {
     0 0 0 11px #c9ad89;
 }
 
-/* Photo inside circle */
+/* FOUNDER IMAGE CROP */
 
 .founder.section .founder-photo img {
-    position: absolute;
-    inset: 0;
-    width: 100% !important;
-    height: 100% !important;
-    min-width: 0 !important;
-    min-height: 0 !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 70% 50% !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  object-position: 50% 65% !important;
 }
 
-/* Founder details */
+/* FOUNDER DETAILS */
 
 .founder.section .founder-copy {
   display: block;
@@ -1033,7 +1034,7 @@ footer .footer-main > div:not(:first-child) a {
   .founder.section .founder-photo {
     width: min(290px, 80vw) !important;
     height: min(290px, 80vw) !important;
-    max-width: none;
+    max-width: 85vw;
   }
 
   .founder.section .founder-copy {
